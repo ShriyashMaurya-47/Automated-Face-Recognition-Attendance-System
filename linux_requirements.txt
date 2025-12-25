@@ -1,0 +1,31 @@
+# Step 1: Clone the repository
+git clone https://github.com/yourusername/Face-Attendance-System.git
+cd Face-Attendance-System
+
+# Step 2: Update system packages
+sudo apt update
+sudo apt upgrade -y
+
+# Step 3: Install required system libraries
+sudo apt install -y build-essential cmake libgtk-3-dev libboost-all-dev \
+libatlas-base-dev gfortran python3-dev libopenblas-dev liblapack-dev \
+libx11-dev libxext-dev
+
+# Step 4: Install Python3 virtual environment package if not installed
+sudo apt install -y python3-venv python3-pip
+
+# Step 5: Create virtual environment
+python3 -m venv venv
+
+# Step 6: Activate virtual environment
+source venv/bin/activate
+
+# Step 7: Upgrade pip inside virtual environment
+pip install --upgrade pip
+
+# Step 8: Install Python modules
+pip install opencv-python face_recognition numpy pandas openpyxl pillow cmake dlib
+
+# Step 9: Verify installation
+python3 -c "import cv2, face_recognition, numpy, pandas; print('All modules installed correctly!')"
+
