@@ -41,7 +41,7 @@ A **Python-based real-time face recognition attendance system** using OpenCV, Fa
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/Face-Attendance-System.git
+   git clone https://github.com/ShriyashMaurya-47/Automated-Face-Recognition-Attendance-System.git
    cd Face-Attendance-System
    ```
 
